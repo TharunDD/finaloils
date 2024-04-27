@@ -1,0 +1,131 @@
+
+
+/* Main container */
+.Ap {
+  display: flex;
+  min-height: 100vh;
+  margin-top: -3vh;
+}
+
+/* Main content */
+.Main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+/* Right content container */
+.RightContent {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: calc(50% - 20px); /* Adjust the width as needed */
+  height: 80%; /* Adjust the height as needed */
+  margin-right: 30px; /* Add margin for spacing */
+}
+
+/* Right content image */
+.RightContent img {
+  max-width: 100%; /* Make the image responsive */
+  max-height: calc(100% - 30px); /* Ensure the image fits without cropping and leave 30px space at the bottom */
+  margin-top: 30px; /* Move the image down by 30px */
+}
+
+/* Left content container */
+.LeftHalf {
+  display: flex;
+  justify-content: flex-start; /* Align items to the start (left side) */
+  align-items: center; /* Vertically center the content */
+  width: 50%; /* Adjust the width as needed */
+  height: 80%; /* Adjust the height as needed */
+}
+
+/* Left content */
+.LeftContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 20px;
+  margin-right: auto; /* Push content to the left */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.LeftContent h2 {
+  font-size: 32px;
+  margin-top: 10%; /* Adjust margin as needed */
+}
+
+.LeftContent p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  /* Make the left content full width */
+  .Main {
+    display: flex;
+    flex-direction: column;
+  }
+.App{
+  flex-direction: row;
+}
+  .LeftHalf {
+    width: 100%;
+  }
+
+  /* Make the left content full width and remove right margin */
+  .LeftContent {
+    min-width: 100%;
+    margin-right: 0;
+  }
+
+  /* Hide the right content on mobile view */
+  .RightContent {
+    min-width: 100%;
+  }
+
+  /* Adjust font sizes for mobile */
+  .LeftContent h2 {
+    font-size: 24px;
+  }
+
+  .LeftContent p {
+    font-size: 16px;
+  }
+}
+
+
+.OilDesign {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.OilBlob {
+  position: absolute;
+  background-color: #d4af37; /* Golden color */
+  border-radius: 50%;
+}
+
+.OilBlob:nth-child(1) {
+  width: 100px;
+  height: 100px;
+
+  right: 150px;
+ bottom:50px;
+}
+
+.OilBlob:nth-child(2) {
+  width: 150px;
+  height: 150px;
+  top: 80px;
+  right:600px;
+}
+
+.OilBlob:nth-child(3) {
+  width: 120px;
+  height: 120px;
+  top: 150px;
+  right:270px;
+}
+

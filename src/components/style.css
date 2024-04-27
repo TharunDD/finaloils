@@ -1,0 +1,349 @@
+/* Style for the entire single-product container */
+.single-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px; /* Add padding as needed */
+  }
+  @media (max-width: 768px) {
+  .aa{
+    flex-direction: column;
+  }
+  } 
+  .product-images {
+    flex: 1; /* Occupy half of the available horizontal space */
+    max-width: 50%; /* Limit the width to 50% of the parent */
+  }
+  
+  /* Style for the carousel */
+  /* Ensure the carousel occupies the full height of the container */
+  .product-images .slick-slider {
+    height: 100%;
+  }
+  
+  /* Style for individual carousel slides (images) */
+  .product-images .slick-slide {
+    height: 33.33%; /* Divide the available height into three equal parts */
+    text-align: center; /* Center the images vertically and horizontally */
+  }
+  
+  .product-images .slick-slide img {
+    max-width: 100%; /* Ensure images don't exceed their container's width */
+    max-height: 100%; /* Ensure images don't exceed their container's height */
+  }
+  
+  /* Style for the product details on the right side */
+  .product-details {
+    flex: 1; /* Occupy half of the available horizontal space */
+    padding: 0 20px; /* Add padding as needed */
+  }
+  
+  /* Style for navigation links */
+  .navigation-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .navigation-links a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  /* Style for quantity variation buttons */
+  /* CSS for the quantity container */
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    width: 100px; /* Adjust the width as needed */
+  }
+  
+  /* CSS for quantity buttons */
+  .quantity-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .quantity-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* CSS for quantity input */
+  .quantity-input {
+    width: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 5px;
+    background-color: #fff;
+  }
+  
+  /* Style for the "Add to Cart" button */
+  .add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px; /* Add spacing below other elements */
+  }
+  
+  .add-to-cart:hover {
+    background-color: #218838;
+  }
+  
+  /* CSS for the weight selector */
+  .weight-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add spacing between weight options */
+  }
+  
+  /* CSS for each weight option */
+  .weight-option {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .weight-label {
+    font-weight: bold;
+  }
+  
+  /* CSS for the selected weight */
+  .weight-option.selected {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* CSS for price */
+  .price {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* CSS for the price details */
+  .price-details {
+    margin-top: 20px;
+  }
+  
+  /* CSS for total price */
+  .total-price {
+    font-weight: bold;
+  }
+  
+  /* CSS for price per item */
+  .price-per-item {
+    color: #555;
+  }
+  
+  /* Style for the Clear button */
+  .clear-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px; /* Add spacing below the "Add to Cart" button */
+  }
+  
+  .clear-button:hover {
+    background-color: #c82333;
+  }
+  /* Horizontal line styles */
+  .horizontal-line {
+    border: none;
+    border-top: 1px solid #ccc; /* 1px solid gray line */
+    margin-top: 20px; /* Adjust margin-top as needed */
+  }
+  /* Product Description */
+  .product-description {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .product-description h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .product-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .product-description ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .product-description ul li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Warranty */
+  .warranty {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .warranty h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .warranty p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Delivery */
+  .delivery {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .delivery h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .delivery p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .delivery input {
+    padding: 5px;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .delivery button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delivery button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Highlights */
+  .highlights {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .highlights h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .highlights ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .highlights ul li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Services */
+  .services {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .services h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .services p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Specifications */
+  .specifications {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .specifications h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .specifications p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .specifications strong {
+    font-weight: bold;
+  }
+  /* Add this CSS to your styles.css or equivalent stylesheet */
+  
+  /* Center the image carousel on small screens (mobile) */
+  @media (max-width: 767px) {
+    .single-product.a {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically */
+    }
+  
+    .product-images {
+      width: 100%; /* Ensure the image takes full width */
+      max-width: 100%; /* Ensure the image doesn't exceed screen width */
+    }
+  }
+  
+.aa{
+  display: flex;
+  gap:5%
+}
